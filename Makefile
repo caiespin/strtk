@@ -15,17 +15,18 @@
 #
 
 
-COMPILER         = -c++
+#COMPILER         = -c++
+COMPILER         = -riscv64-unknown-linux-gnu-g++
 #COMPILER        = -clang++
-OPTIMIZATION_OPT = -O2
+OPTIMIZATION_OPT = -O3
 NO_EXTRA_LIBS    = -Dstrtk_no_tr1_or_boost
-BASE_OPTIONS     = -ansi -pedantic-errors -Wall -Wextra -Werror -Wno-long-long
+BASE_OPTIONS     = -static -ansi -pedantic-errors -Wall -Wextra -Werror -Wno-long-long
 OPTIONS          = $(BASE_OPTIONS) $(OPTIMIZATION_OPT) -o
 REGEX            = -lboost_regex
 PTHREAD          = -lpthread
 LINKER_OPT       = -lstdc++ -lm
 
-BUILD_LIST+=strtk_examples
+#BUILD_LIST+=strtk_examples
 BUILD_LIST+=strtk_tokenizer_test
 BUILD_LIST+=strtk_bloom_filter_example
 BUILD_LIST+=strtk_combinations
@@ -40,13 +41,13 @@ BUILD_LIST+=strtk_numstats
 BUILD_LIST+=strtk_parse_test
 BUILD_LIST+=strtk_period_parser
 BUILD_LIST+=strtk_randomizer
-BUILD_LIST+=strtk_random_line
+#BUILD_LIST+=strtk_random_line
 BUILD_LIST+=strtk_search_trie_example
 BUILD_LIST+=strtk_serializer_example
 BUILD_LIST+=strtk_text_parser_example01
 BUILD_LIST+=strtk_text_parser_example02
 BUILD_LIST+=strtk_tokengrid_example
-BUILD_LIST+=strtk_tokenizer_cmp
+#BUILD_LIST+=strtk_tokenizer_cmp
 BUILD_LIST+=strtk_wordfreq
 
 all: $(BUILD_LIST)

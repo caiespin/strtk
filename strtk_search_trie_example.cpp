@@ -31,6 +31,8 @@
 #include <map>
 #include <set>
 
+#define strtk_no_tr1_or_boost
+
 #include "strtk.hpp"
 
 

@@ -69,6 +69,8 @@
 #include <string>
 #include <vector>
 
+#define strtk_no_tr1_or_boost
+
 #include "strtk.hpp"
 
 

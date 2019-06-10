@@ -54,6 +54,8 @@
 #include <string>
 #include <deque>
 
+#define strtk_no_tr1_or_boost
+
 #include "strtk.hpp"
 
 

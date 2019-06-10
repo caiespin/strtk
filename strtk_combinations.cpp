@@ -40,6 +40,8 @@
 #include <vector>
 #include <algorithm>
 
+#define strtk_no_tr1_or_boost
+
 #include "strtk.hpp"
 
 

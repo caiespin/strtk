@@ -37,6 +37,8 @@
 #include <cmath>
 #include <cassert>
 
+#define strtk_no_tr1_or_boost
+
 #include "strtk.hpp"
 
 

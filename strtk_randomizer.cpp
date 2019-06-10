@@ -31,6 +31,8 @@
 #include <deque>
 #include <ctime>
 
+#define strtk_no_tr1_or_boost
+
 #include "strtk.hpp"
 
 

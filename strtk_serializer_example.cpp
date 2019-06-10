@@ -25,6 +25,8 @@
 #include <deque>
 #include <list>
 
+#define strtk_no_tr1_or_boost
+
 #include "strtk.hpp"
 
 
